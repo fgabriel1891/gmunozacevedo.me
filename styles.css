@@ -1,0 +1,150 @@
+/* General Reset */
+body, h1, h2, h3, h4, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px; /* Small and professional font size */
+    color: #000; /* Black text */
+    background-color: #fff; /* White background */
+    line-height: 1.5; /* Good readability */
+    margin: 1rem; /* Add some breathing space around the page */
+}
+
+/* Header Styling */
+#hero-heading {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #ddd; /* Subtle line separator */
+}
+
+#hero-heading h1 {
+    font-size: 1.8rem; /* Slightly larger font for the title */
+    font-weight: bold;
+}
+
+#hero-heading p {
+    font-size: 0.9rem; /* Subtitle with smaller font */
+    color: #555; /* Subtle gray for secondary text */
+}
+
+/* Section Headers */
+h2, h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd; /* Simple underline */
+    padding-bottom: 0.3rem;
+}
+
+/* Paragraph Text */
+p {
+    margin-bottom: 1rem;
+    color: #333; /* Dark gray for body text */
+}
+
+/* Links */
+a {
+    color: #000; /* Black links */
+    text-decoration: none;
+    border-bottom: 1px dotted #333; /* Subtle underline for emphasis */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #555; /* Slight gray shift on hover */
+}
+
+/* Lists */
+ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555; /* Subtle footer text */
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd; /* Top line to separate */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px; /* Slightly smaller font for mobile devices */
+    }
+
+    #hero-heading h1 {
+        font-size: 1.5rem; /* Adjust title size for smaller screens */
+    }
+}
+
+/* Panel Tabset Container */
+.panel-tabset {
+    margin-top: 1rem;
+}
+
+/* Tabset Navigation Container */
+.panel-tabset .nav-tabs {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the tabs horizontally */
+    border-bottom: none; /* Remove the default underline */
+    padding-bottom: 0.5rem; /* Add some spacing below the tabs */
+}
+
+/* Tab Buttons */
+.panel-tabset .nav-tabs .nav-link {
+    background-color: #f3f4ed; /* Soft earth-tone background */
+    color: #4a752c; /* Forest green text */
+    border: 1px solid #c8d5b9; /* Light green border */
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+    margin-right: 0.5rem; /* Spacing between tabs */
+    padding: 0.5rem 1rem; /* Comfortable padding for the text */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Tabs */
+.panel-tabset .nav-tabs .nav-link:hover {
+    background-color: #dce7d4; /* Light green hover */
+    color: #2c4a1c; /* Darker green text */
+    border-color: #b8cbb1; /* Slightly darker green border */
+    text-decoration: none; /* Remove any underline effects */
+}
+
+/* Active (Clicked) Tab */
+.panel-tabset .nav-tabs .nav-link.active {
+    background-color: #bcd6b0; /* Nature-inspired soft green */
+    color: #1b3324; /* Dark forest green for active tab text */
+    border-color: #9eb58a; /* Slightly darker border for active tab */
+    border-bottom: 0px; /* Seamless transition into the panel body */
+    font-weight: bold; /* Highlight the active tab text */
+}
+
+/* Tab Panel Content */
+.panel-tabset .tab-content {
+    background-color: #ffffff; /* White panel background */
+    border: 1px solid #c8d5b9; /* Light green border matching tabs */
+    padding: 1rem; /* Comfortable padding for content */
+    border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+    color: #333333; /* Neutral text for content */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .panel-tabset .nav-tabs .nav-link {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 0.4rem 0.8rem; /* Reduce padding */
+    }
+}
