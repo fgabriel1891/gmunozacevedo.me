@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.545">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>publications</title>
+<title>Publications | Gabriel Munoz</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,15 +30,17 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +68,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-articles .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-doi','listing-materials','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-editor',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -78,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -101,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -111,22 +171,329 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#publications" id="toc-publications" class="nav-link active" data-scroll-target="#publications">Publications</a></li>
-  </ul>
-</nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="QWRhcHRpdmUlMjBhZHZhbnRhZ2Vz">Adaptive advantages <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QWxwaW5lJTIwZWNvc3lzdGVtcw==">Alpine ecosystems <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QWx0aXR1ZGluYWwlMjBncmFkaWVudHM=">Altitudinal gradients <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QW5kZWFuJTIwY2xvdWRmb3Jlc3Rz">Andean cloudforests <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmVsb3dncm91bmQlMjBmdW5nYWwlMjBkaXZlcnNpdHk=">Belowground fungal diversity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmlvZGl2ZXJzaXR5">Biodiversity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tbXVuaXR5JTIwYXNzZW1ibHk=">Community assembly <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29uc2VydmF0aW9uJTIwc3RyYXRlZ2llcw==">Conservation strategies <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyME1vYmlsaXNhdGlvbg==">Data Mobilisation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RWNvc3lzdGVtJTIwdHJhbnNmb3JtYXRpb24=">Ecosystem transformation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RXRobm9zY2llbnRpZmljJTIwYmlvbG9naWNhbCUyMGNvbnNlcnZhdGlvbg==">Ethnoscientific biological conservation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rm91bmRhdGlvbiUyMHNwZWNpZXM=">Foundation species <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SHVtYW4lMjBwZXJjZXB0aW9uJTIwb2YlMjBuYXR1cmU=">Human perception of nature <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SHVtYW4tcmFwdG9yJTIwcmVsYXRpb25zaGlwcw==">Human-raptor relationships <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TW9ycGhvbG9naWNhbCUyMGRpZmZlcmVudGlhdGlvbg==">Morphological differentiation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TmVvdHJvcGljYWwlMjBiaW9kaXZlcnNpdHk=">Neotropical biodiversity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmFuZ2UlMjBleHBhbnNpb24=">Range expansion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2NpZW50aWZpYyUyMGxpdGVyYXR1cmU=">Scientific literature <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3BlY2llcyUyMGludGVyYWN0aW9ucw==">Species interactions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3VwZXJvcmdhbmlzbXM=">Superorganisms <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGV4dCUyMG1pbmluZw==">Text mining <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VHJhZGl0aW9uYWwlMjBlY29sb2dpY2FsJTIwa25vd2xlZGdl">Traditional ecological knowledge <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YW50JTIwd29ya2VyJTIwcG9seW1vcnBoaXNt">ant worker polymorphism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YmlvZGl2ZXJzaXR5JTIwaG9tb2dlbmVpemF0aW9u">biodiversity homogeneization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YmlvZ2VvZ3JhcGhpYyUyMHJlZ2lvbnM=">biogeographic regions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29tbXVuaXR5JTIwYXNzZW1ibHk=">community assembly <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29udGVtcG9yYXJ5JTIwYmlvZGl2ZXJzaXR5">contemporary biodiversity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGVtb2dyYXBoaWMlMjB2YXJpYXRpb24=">demographic variation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGV0ZXJtaW5pc3RpYyUyMGFzc2VtYmx5">deterministic assembly <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZHJlYW1z">dreams <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZW52aXJvbm1lbnRhbCUyMGZpbHRlcmluZw==">environmental filtering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2VuZXRpYyUyMGRpZmZlcmVudGlhdGlvbg==">genetic differentiation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2VuZXRpYyUyMGRpdmVyc2l0eQ==">genetic diversity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2VvZ3JhcGhpY2FsJTIwaG90c3BvdHM=">geographical hotspots <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW50ZXJhY3Rpb24lMjBhc3NlbWJseQ==">interaction assembly <span class="quarto-category-count">(1)</span></div><div class="category" data-category="am91cm5hbCUyMGFydGljbGU=">journal article <span class="quarto-category-count">(7)</span></div><div class="category" data-category="bGFuZ3VhZ2U=">language <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWV0aG9kb2xvZ2ljYWw=">methodological <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV0d29yayUyMGFzc2VtYmx5JTIwbW9kZQ==">network assembly mode <span class="quarto-category-count">(1)</span></div><div class="category" data-category="b3JiLXdlYiUyMHNwaWRlcnM=">orb-web spiders <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGhlbm90eXBpYyUyMGNvbXBsZXhpdHk=">phenotypic complexity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2VudGltZW50">sentiment <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGhlc2lz">thesis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhaXQlMjBtYXRjaGluZw==">trait matching <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Publications</li>
+  </ol>
+</nav>
 <section id="publications" class="level1">
 <h1>Publications</h1>
+<div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-articles-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-articles'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+         <option value="listing-publication" data-direction="asc">
+          Publication
+        </option>
+         <option value="listing-year" data-direction="asc">
+          Year
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<!-- A minimal, professional publication list -->
+<ul class="list-unstyled">
+  
+    <li class="mb-4" data-index="0" data-categories="UmFuZ2UlMjBleHBhbnNpb24lMkNGb3VuZGF0aW9uJTIwc3BlY2llcyUyQ0JlbG93Z3JvdW5kJTIwZnVuZ2FsJTIwZGl2ZXJzaXR5JTJDQWxwaW5lJTIwZWNvc3lzdGVtcyUyQ0Vjb3N5c3RlbSUyMHRyYW5zZm9ybWF0aW9uJTJDam91cm5hbCUyMGFydGljbGU=" data-listing-file-modified-sort="1734881508995" data-listing-reading-time-sort="2" data-listing-word-count-sort="254">
+      <!-- Title -->
+      <h5 class="text-dark mb-1 anchored" data-anchor-id="publications">
+        A single range-expanding species reshapes alpine ecosystems and their belowground diversity
+      </h5>
+      
+      <!-- Author / Publication / Year -->
+      <p class="text-muted mb-2">
+         
+        | 
+        <em>OIKOS</em> 
+        (2024)
+      </p>
+      
+      <!-- Links -->
+      <a href="./articles/range_pine_alpine.html" class="btn btn-sm btn-primary">
+        Details
+      </a>
+      
+      
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6344444/" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+          DOI
+        </a>
+      
+
+      
+
+      
+        <a href="https://osf.io/sfhm2/" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-file-earmark-zip"></i> Materials
+        </a>
+      
+    </li>
+  
+    <li class="mb-4" data-index="1" data-categories="RXRobm9zY2llbnRpZmljJTIwYmlvbG9naWNhbCUyMGNvbnNlcnZhdGlvbiUyQ1RyYWRpdGlvbmFsJTIwZWNvbG9naWNhbCUyMGtub3dsZWRnZSUyQ0h1bWFuLXJhcHRvciUyMHJlbGF0aW9uc2hpcHMlMkNDb25zZXJ2YXRpb24lMjBzdHJhdGVnaWVzJTJDSHVtYW4lMjBwZXJjZXB0aW9uJTIwb2YlMjBuYXR1cmUlMkNqb3VybmFsJTIwYXJ0aWNsZQ==" data-listing-file-modified-sort="1734892879694" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+      <!-- Title -->
+      <h5 class="text-dark mb-1 anchored">
+        Unveiling Social Dynamics in People's Perception of Raptors to Guide Effective Conservation Strategies
+      </h5>
+      
+      <!-- Author / Publication / Year -->
+      <p class="text-muted mb-2">
+         
+        | 
+        <em>Journal of Ethnobiology</em> 
+        (2024)
+      </p>
+      
+      <!-- Links -->
+      <a href="./articles/raptors.html" class="btn btn-sm btn-primary">
+        Details
+      </a>
+      
+      
+        <a href="https://journals.sagepub.com/doi/full/10.1177/02780771241250117" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+          DOI
+        </a>
+      
+
+      
+
+      
+        <a href="https://osf.io/sfhm2/" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-file-earmark-zip"></i> Materials
+        </a>
+      
+    </li>
+  
+    <li class="mb-4" data-index="2" data-categories="YmlvZ2VvZ3JhcGhpYyUyMHJlZ2lvbnMlMkNkZW1vZ3JhcGhpYyUyMHZhcmlhdGlvbiUyQ2dlbmV0aWMlMjBkaXZlcnNpdHklMkNiaW9kaXZlcnNpdHklMjBob21vZ2VuZWl6YXRpb24lMkNnZW5ldGljJTIwZGlmZmVyZW50aWF0aW9uJTJDY29udGVtcG9yYXJ5JTIwYmlvZGl2ZXJzaXR5JTJDam91cm5hbCUyMGFydGljbGU=" data-listing-file-modified-sort="1734893219952" data-listing-reading-time-sort="2" data-listing-word-count-sort="236">
+      <!-- Title -->
+      <h5 class="text-dark mb-1 anchored">
+        Population demography mantains biogeographic boundaries
+      </h5>
+      
+      <!-- Author / Publication / Year -->
+      <p class="text-muted mb-2">
+         
+        | 
+        <em>Ecology Letters</em> 
+        (2022)
+      </p>
+      
+      <!-- Links -->
+      <a href="./articles/pop_demo.html" class="btn btn-sm btn-primary">
+        Details
+      </a>
+      
+      
+        <a href="https://www.biorxiv.org/content/10.1101/2022.01.13.476105.full.pdf" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+          DOI
+        </a>
+      
+
+      
+
+      
+        <a href="https://osf.io/sfhm2/" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-file-earmark-zip"></i> Materials
+        </a>
+      
+    </li>
+  
+    <li class="mb-4" data-index="3" data-categories="Y29tbXVuaXR5JTIwYXNzZW1ibHklMkNkZXRlcm1pbmlzdGljJTIwYXNzZW1ibHklMkNlbnZpcm9ubWVudGFsJTIwZmlsdGVyaW5nJTJDaW50ZXJhY3Rpb24lMjBhc3NlbWJseSUyQ25ldHdvcmslMjBhc3NlbWJseSUyMG1vZGUlMkN0cmFpdCUyMG1hdGNoaW5nJTJDam91cm5hbCUyMGFydGljbGU=" data-listing-file-modified-sort="1734893654917" data-listing-reading-time-sort="2" data-listing-word-count-sort="321">
+      <!-- Title -->
+      <h5 class="text-dark mb-1 anchored">
+        Trait‐based inference of ecological network assembly: a conceptual framework and methodological toolbox
+      </h5>
+      
+      <!-- Author / Publication / Year -->
+      <p class="text-muted mb-2">
+         
+        | 
+        <em>Ecological Monographs</em> 
+        (2022)
+      </p>
+      
+      <!-- Links -->
+      <a href="./articles/Trait_based_inference.html" class="btn btn-sm btn-primary">
+        Details
+      </a>
+      
+      
+        <a href="https://www.researchgate.net/profile/Gabriel-Munoz-8/publication/357131663_Trait-based_inference_of_ecological_network_assembly_a_conceptual_framework_and_methodological_toolbox/links/61be327a1d88475981fc5181/Trait-based-inference-of-ecological-network-assembly-a-conceptual-framework-and-methodological-toolbox.pdf" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+          DOI
+        </a>
+      
+
+      
+
+      
+        <a href="https://osf.io/sfhm2/" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-file-earmark-zip"></i> Materials
+        </a>
+      
+    </li>
+  
+    <li class="mb-4" data-index="4" data-categories="cGhlbm90eXBpYyUyMGNvbXBsZXhpdHklMkNnZW9ncmFwaGljYWwlMjBob3RzcG90cyUyQ2FudCUyMHdvcmtlciUyMHBvbHltb3JwaGlzbSUyQ0FkYXB0aXZlJTIwYWR2YW50YWdlcyUyQ01vcnBob2xvZ2ljYWwlMjBkaWZmZXJlbnRpYXRpb24lMkNTdXBlcm9yZ2FuaXNtcyUyQ2pvdXJuYWwlMjBhcnRpY2xl" data-listing-file-modified-sort="1734879864697" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
+      <!-- Title -->
+      <h5 class="text-dark mb-1 anchored">
+        Warm and arid regions of the world are hotspots of superorganism complexity
+      </h5>
+      
+      <!-- Author / Publication / Year -->
+      <p class="text-muted mb-2">
+         
+        | 
+        <em>Proceedings of the Royal Society B</em> 
+        (2022)
+      </p>
+      
+      <!-- Links -->
+      <a href="./articles/ants_world.html" class="btn btn-sm btn-primary">
+        Details
+      </a>
+      
+      
+        <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspb.2021.1899" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+          DOI
+        </a>
+      
+
+      
+
+      
+        <a href="https://osf.io/sfhm2/" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-file-earmark-zip"></i> Materials
+        </a>
+      
+    </li>
+  
+    <li class="mb-4" data-index="5" data-categories="bWV0aG9kb2xvZ2ljYWwlMkNsYW5ndWFnZSUyQ3NlbnRpbWVudCUyQ2RyZWFtcyUyQ2pvdXJuYWwlMjBhcnRpY2xl" data-listing-file-modified-sort="1734837306129" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+      <!-- Title -->
+      <h5 class="text-dark mb-1 anchored">
+        A synthesis of animal‐mediated seed dispersal of palms reveals distinct biogeographical differences in species interactions
+      </h5>
+      
+      <!-- Author / Publication / Year -->
+      <p class="text-muted mb-2">
+        Munoz G et al. 
+        | 
+        <em>Journal of Biogeography</em> 
+        (2019)
+      </p>
+      
+      <!-- Links -->
+      <a href="./articles/20_01.html" class="btn btn-sm btn-primary">
+        Details
+      </a>
+      
+      
+        <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/jbi.13493" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+          DOI
+        </a>
+      
+
+      
+
+      
+        <a href="https://osf.io/sfhm2/" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-file-earmark-zip"></i> Materials
+        </a>
+      
+    </li>
+  
+    <li class="mb-4" data-index="6" data-categories="QmlvZGl2ZXJzaXR5JTJDVGV4dCUyMG1pbmluZyUyQ1NjaWVudGlmaWMlMjBsaXRlcmF0dXJlJTJDRGF0YSUyME1vYmlsaXNhdGlvbiUyQ1NwZWNpZXMlMjBpbnRlcmFjdGlvbnMlMkNqb3VybmFsJTIwYXJ0aWNsZQ==" data-listing-file-modified-sort="1734894135235" data-listing-reading-time-sort="2" data-listing-word-count-sort="217">
+      <!-- Title -->
+      <h5 class="text-dark mb-1 anchored">
+        Biodiversity Observations Miner: A web application to unlock primary biodiversity data from published literature
+      </h5>
+      
+      <!-- Author / Publication / Year -->
+      <p class="text-muted mb-2">
+         
+        | 
+        <em>Biodiversity Data Journal</em> 
+        (2018)
+      </p>
+      
+      <!-- Links -->
+      <a href="./articles/bOMs.html" class="btn btn-sm btn-primary">
+        Details
+      </a>
+      
+      
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6344444/" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+          DOI
+        </a>
+      
+
+      
+
+      
+        <a href="https://osf.io/sfhm2/" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-file-earmark-zip"></i> Materials
+        </a>
+      
+    </li>
+  
+    <li class="mb-4" data-index="7" data-categories="b3JiLXdlYiUyMHNwaWRlcnMlMkNBbmRlYW4lMjBjbG91ZGZvcmVzdHMlMkNDb21tdW5pdHklMjBhc3NlbWJseSUyQ0FsdGl0dWRpbmFsJTIwZ3JhZGllbnRzJTJDTmVvdHJvcGljYWwlMjBiaW9kaXZlcnNpdHklMkN0aGVzaXM=" data-listing-file-modified-sort="1734879442860" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
+      <!-- Title -->
+      <h5 class="text-dark mb-1 anchored">
+        Estructura de la comunidad de arañas tejedoras (Arachnida: Araneidae) a lo largo de un gradiente altitudinal en los Andes nor-orientales ecuatorianos
+      </h5>
+      
+      <!-- Author / Publication / Year -->
+      <p class="text-muted mb-2">
+         
+        | 
+        <em>Universidad San Francisco de Quito (Thesis repository)</em> 
+        (2013)
+      </p>
+      
+      <!-- Links -->
+      <a href="./articles/spiders-usfq.html" class="btn btn-sm btn-primary">
+        Details
+      </a>
+      
+      
+        <a href="https://www.biorxiv.org/content/10.1101/2022.01.13.476105.full.pdf" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+          DOI
+        </a>
+      
+
+      
+
+      
+        <a href="https://osf.io/sfhm2/" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-file-earmark-zip"></i> Materials
+        </a>
+      
+    </li>
+  
+</ul>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
 
 
 </section>
@@ -167,18 +534,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -210,7 +566,45 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/fgabriel1891\.github\.io\/gmunozacevedo\.me\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -245,7 +639,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -293,7 +691,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
